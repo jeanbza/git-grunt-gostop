@@ -1,4 +1,6 @@
-# git-grunt-gostop v0.1.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/git-grunt-gostop.png?branch=master)](https://travis-ci.org/gruntjs/git-grunt-gostop)
+# git-grunt-gostop v0.1.0 
+
+[![Build Status](https://travis-ci.org/jadekler/git-grunt-gostop.svg)](https://travis-ci.org/jadekler/git-grunt-gostop)
 
 > Stop Running Go programs
 
