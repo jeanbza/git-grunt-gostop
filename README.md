@@ -1,6 +1,4 @@
-# git-grunt-gostop v0.1.0 
-
-[![Build Status](https://travis-ci.org/jadekler/git-grunt-gostop.svg)](https://travis-ci.org/jadekler/git-grunt-gostop)
+# git-grunt-gostop v0.1.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/git-grunt-gostop.png?branch=master)](https://travis-ci.org/gruntjs/git-grunt-gostop)
 
 > Stop Running Go programs
 
@@ -50,4 +48,4 @@ gostop: {
 
 Task submitted by [Jean de Klerk](jeandeklerk.com)
 
-*This file was generated on Tue Nov 04 2014 20:38:36.*
+*This file was generated on Sat Nov 08 2014 20:09:15.*

@@ -8,10 +8,17 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'tasks/*.js',
-        '<%= nodeunit.tests %>'
+        '<%= nodeunit.before_test %>',
+        '<%= nodeunit.after_test %>'
       ],
       options: {
         jshintrc: '.jshintrc'
+      }
+    },
+
+    gorun: {
+      basic: {
+        src: 'test/fixtures/gostop_basic.go'
       }
     },
 
@@ -26,7 +33,8 @@ module.exports = function(grunt) {
 
     // Unit tests.
     nodeunit: {
-      tests: ['test/*_test.js']
+      before_test: ['test/before_test.js'],
+      after_test: ['test/after_test.js'],
     }
   });
 
@@ -38,11 +46,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-internal');
+  grunt.loadNpmTasks('git-grunt-gorun');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
   // NOTE: We run the task twice to check for file overwrite issues.
-  grunt.registerTask('test', ['jshint', 'clean', 'gostop', 'nodeunit', 'clean']);
+  grunt.registerTask('test', ['jshint', 'clean', 'gorun', 'nodeunit:before_test', 'gostop', 'nodeunit:after_test', 'clean']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['test', 'build-contrib']);

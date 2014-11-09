@@ -6,7 +6,7 @@ import (
 
 func main() {
     http.HandleFunc("/foo", foo)
-    http.ListenAndServe(":3000", nil)
+    http.ListenAndServe(":3001", nil)
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
