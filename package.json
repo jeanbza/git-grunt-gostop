@@ -28,7 +28,7 @@
     "chalk": "~0.4.0"
   },
   "devDependencies": {
-    "git-grunt-gorun": "git+ssh://git@github.com/jadekler/git-grunt-gorun.git",
+    "git-grunt-gorun": "git://github.com/jadekler/git-grunt-gorun.git",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.4.0",
