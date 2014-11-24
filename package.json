@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gruntjs/git-grunt-gostop.git"
+    "url": "git://github.com/jadekler/git-grunt-gostop.git"
   },
   "bugs": {
-    "url": "https://github.com/gruntjs/git-grunt-gostop/issues"
+    "url": "https://github.com/jadekler/git-grunt-gostop/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/gruntjs/git-grunt-gostop/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jadekler/git-grunt-gostop/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -57,6 +57,5 @@
       "name": "Jean de Klerk",
       "email": "jadeklere@gmail.com"
     }
-  ],
-  "readme": "ERROR: No README data found!"
+  ]
 }
